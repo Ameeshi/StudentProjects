@@ -5,7 +5,7 @@
  allproj ["s16"] = new Semester("s16", "spring", "2016", "spring16");
 
 
- function LoadSemesterPage(sem) {
+function LoadSemesterPage(sem) {
 
  	var projects = ParseSemester(sem);
 
@@ -25,9 +25,9 @@
  		card.childNodes[1].href = sem.code + "/" + projects[proj].code + ".html"
  		index++;
  	}
- }
+}
 
- function LoadAllProjectsPage() {
+function LoadAllProjectsPage(){
  	displayedProjects = [];
 
  	for (sem in allproj) {
@@ -57,9 +57,46 @@
  		card.childNodes[0].childNodes[1].innerHTML = displayedProjects[i].name;
  		card.childNodes[0].href = sem.code + "/" + displayedProjects[i].code + ".html"
  	}
- }
+}
 
- function ParseSemester(sem) {
+function LoadSearchPage() {
+	displayedProjects = [];
+	var target = window.location.pathname;
+	var terms = target.split("+"); 			//Always disregard first and last index
+
+	for (sem in allproj) {
+ 		var temp = ParseSemester(allproj[sem]);
+ 		for (name in temp) {
+ 			var valid = false;
+ 			for (var i = 1; i < terms.length; i++) {   // itterating through tag list
+ 				for (var j = 0; j < temp[name].tags.length; j++) { // itterating through all of the tags
+ 					if (/temp[name].tags[j]/i.search(/terms[i]/i) != -1) {  // Case insensitive search of partial tags
+ 						valid = true;
+ 					}
+ 				} 
+ 			}
+ 			if (valid){
+ 				displayedProjects.push (temp[name]);
+ 			}
+ 		}
+ 	}
+
+ 	for (var i = 0; i < displayedProjects.length; i++) {
+
+ 		console.log(displayedProjects[i])
+
+ 		var card = document.getElementById("card" + i);
+ 		console.log(card);
+
+ 		card.childNodes[0].childNodes[0].src = displayedProjects[i].img;
+ 		card.childNodes[0].childNodes[1].innerHTML = displayedProjects[i].name;
+ 		card.childNodes[0].href = sem.code + "/" + displayedProjects[i].code + ".html"
+ 	}
+
+
+}
+
+function ParseSemester(sem) {
  	var data = {};
  	var projects = {};
 
@@ -69,20 +106,18 @@
 	});
 
 	return projects;
+}
 
-
- }
-
- function AddRow() {
+function AddRow() {
  	var toCreate = document.createElement("div");
  	toCreate.className = "row";
 
  	document.getElementById("layout").appendChild(toCreate);
 
  	return toCreate;
- }
+}
 
- function AddPage (rownode, index) {
+function AddPage (rownode, index) {
  	var wrapper = document.createElement("div");
  	wrapper.className = "col-xs-4 project-icon";
  	wrapper.id = "card" + index;
@@ -103,7 +138,7 @@
  	rownode.appendChild(wrapper);
 
  	return wrapper;
- }
+}
 
 function LoadPage() {
 	var target = window.location.pathname;
