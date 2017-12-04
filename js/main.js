@@ -11,6 +11,15 @@ function closeNav() {
 }
 
 
+function validateForm() {
+    var x = document.forms["searchbar"]["search"].value;
+    if (x == "") {
+        alert("Form must be filled out");
+        return false;
+    }
+}
+
+
 var displayedProjects = [];
 
 

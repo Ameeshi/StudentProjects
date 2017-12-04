@@ -1,11 +1,22 @@
 .text-things {
-	padding: 20px;
+	padding: 0px 20px;
+}
+
+h2 {
+	text-align: center;
+	margin: 10px auto;
+
 }
 
 details {
-	margin: 10px 0px;
+	margin: 20px 5px;
 }
 
 summary {
 	font-weight: bold;
+	font-size: 1.3em;
+}
+
+.sub-content {
+	font-size: 1.1em;
 }

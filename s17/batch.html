@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Best of the Batch Foundation</title>
+    <meta content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/project.css">
+
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div class="sidenav" id="menu-sidenav">
+              <ul class="nav navbar-nav">
+                <li class="navbar-text nav-title-text" onclick="closeNav()" id="nav-cmu">Carnegie Mellon University</br>Information Systems</li>
+                <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">All Projects</a></li>
+              </ul>
+              
+              <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects by Semester <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Spring 17</a></li>
+                    <li><a href="#">Spring 16</a></li>
+                  </ul>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Students</a></li>
+              </ul>
+    </div><!-- /.navbar-collapse -->
+<div id="main">
+    <!-- Headder -->
+        <div class="header-main">
+            <a id="back-arrow" href="index.html" >
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <form class=" header-search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+            </form>
+
+            <button type="button" class="navbar-toggle collapsed" onclick="openNav()">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+             </button>
+        </div>
+    <!-- End Header-->
+    <div class="text-things">
+    <h2 class="project-name">Student Projects</h2>
+    <img class="photo" src="images/placeholder.png">
+    <div id="sections">
+        <details>
+            <summary>Team</summary>
+            <ul class="project-team sub-content">
+                <li>Annette Chen</li>
+                <li>Akash Kejriwal</li>
+                <li>Jeremy Lee</li>
+            </ul>
+        </details>
+        <details>
+            <summary>Opportunity</summary>
+            <p class="project-opportunity sub-content">
+                The Best of the Batch has two main summer programs, Project C.H.U.C.K. and Next Level Athletics. As these programs continue to grow, the foundation needs a way to keep track of the all kids in each program throughout the different seasons. In the past few years, CMU Information Systems teams have worked on creating a registration and scheduling system for Project C.H.U.C.K. Best of the Batch is expanding the number of programs they offer as well as the number of kids that partake in these programs. There is an opportunity for us to expand past years’ projects to create a more robust, and bulletproof system with added functionality, including the addition of registration for Next Level Athletics and student study hall tracking.
+            </p>
+        </details>
+        <details>
+            <summary>Outcomes</summary>
+            <p class="project-outcome sub-content">
+                Using past projects as a guide for our application, we began by generating a list of use cases and functionalities based on deficiencies the client identified in past projects as well and new feature requests. From this we started a new application from scratch using a new refactored database design. We created a fully functioning and bulletproof Ruby on Rails application, improving features on the Project C.H.U.C.K. side and implementing a new registration system for Next Level Athletics. In past years, the app was mainly used by admin; however we extended usability so the application is more user friendly for a wide range of users, including volunteers, coaches, and parents. We identified that the application would mostly be used on mobile devices and adapted the application to be mobile friendly. The application also updates information based on the certain year, saving old data but only showing relevant information. We intend that this new application will help Best of the Batch to better organize and increase efficiency when accessing their information.
+            </p>
+        </details>
+        <details>
+            <summary>Deliverables</summary>
+            <p class="project-deliverable sub-content">
+                The main deliverable our team is providing to the client is a web application hosted on Heroku. The web application encompasses two major programs that Best of the Batch runs, Project C.H.U.C.K. and Next Level Athletics. Amongst our deliverables, we are providing documentation for both future teams to continue working on the project as well as documentation for the client to use the web application. 
+            </p>
+        </details>
+    </div>
+    
+    </div>
+</div>
+</body>
+</html>

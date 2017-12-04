@@ -1,6 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+/*@import url('https://fonts.googleapis.com/css?family=Merriweather');*/
+
 * {
-	overflow: 	auto;
+	font-family: 'Lato';
+	overflow: auto;
 	margin: 0px;
+}
+
+h1 {
+	font-family: 'Lato';
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.navbar-toggle .icon-bar {
+	visibility: visible;
+    background-color: white;
+    z-index: -1;
+    height: 4px;
+    width: 100%;
+}
+
+.navbar-toggle {
+	position: fixed;
+	padding: 0px;
+	background-color: transparent;
+	margin-left: 90%;
+	margin-right: 11px;
+	margin-top: -49px;
+	height: 33px;
+	width: 30px;
 }
 
 
@@ -12,10 +41,30 @@
     z-index: 1; /* Stay on top */
     top: 0;
     right: 0;
-    background-color: lightgrey; /* Black*/
+    color: white;
+    background-color: #414445; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 0px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    transition: 0.2s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.dropdown-menu li a {
+	color: white;
+}
+
+.sidenav a {
+	font-size: 1em;
+	color: white;
+	border-bottom: white solid 1px;
+}
+
+.sidenav a:hover {
+	color: black;
+}
+
+.sidenav a:active {
+	/*background-color: #4B4E4F;*/
+	color: black;
 }
 
 #main {
@@ -23,31 +72,34 @@
 }
 
 #nav-cmu {
-	background-color: lightblue;
+	background-color: #4a76d5;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
 
 .header-main {
-	padding: 10px 10px 5px;
-	background-color: lightblue;
-	/*border: dotted black 1px;*/
-	width: 100%;
+	background-color: #4a76d5;
+	height: 65px;
 }
 
 .header-search {
-	width: 70%;
-	float: left;
+	padding: 15px 15px 0px;
+	width: 83%;
 }
 
 /*Used to format "Carnegie Mellon University - Information Systems" in the navbar*/
-.nav-title-text {
-
+.nav-title-text::first-line {
+	font-family: "cambria";
+	font-weight: bold;
+	font-size: 1.2em;
 }
 
 #back-arrow{
+	color: white;
 	float: left;
-	margin: 5px;
+	margin-left: 10px;
+	margin-top: 20px;
+	font-size: 20px;
 }
 
 button {
@@ -58,4 +110,14 @@ button {
 img {
 	max-width: 100%;
 	max-height: 100%;
+}
+
+.form-control {
+	-webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+
+}
+
+input[type=text]:focus {
+	width: 80%;  /*Remove for actual release*/
 }

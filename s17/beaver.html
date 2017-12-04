@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Beaver County Humane Society</title>
+    <meta content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/project.css">
+
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div class="sidenav" id="menu-sidenav">
+              <ul class="nav navbar-nav">
+                <li class="navbar-text nav-title-text" onclick="closeNav()" id="nav-cmu">Carnegie Mellon University</br>Information Systems</li>
+                <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">All Projects</a></li>
+              </ul>
+              
+              <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects by Semester <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Spring 17</a></li>
+                    <li><a href="#">Spring 16</a></li>
+                  </ul>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Students</a></li>
+              </ul>
+    </div><!-- /.navbar-collapse -->
+<div id="main">
+    <!-- Headder -->
+        <div class="header-main">
+            <a id="back-arrow" href="index.html" >
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <form class=" header-search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+            </form>
+
+            <button type="button" class="navbar-toggle collapsed" onclick="openNav()">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+             </button>
+        </div>
+    <!-- End Header-->
+    <div class="text-things">
+    <h2 class="project-name">Student Projects</h2>
+    <img class="photo" src="images/placeholder.png">
+    <div id="sections">
+        <details>
+            <summary>Team</summary>
+            <ul class="project-team sub-content">
+                <li>Daniel Graf</li>
+                <li>Pooja Penninti</li>
+                <li>Hanson Zeng</li>
+            </ul>
+        </details>
+        <details>
+            <summary>Opportunity</summary>
+            <p class="project-opportunity sub-content">
+                Currently, the foster application requires bug fixes and functionality updates and so BCHS’s main problems are more directed towards refinement of the current solution rather than tackling a whole new problem. Most of their issues are dealing with small user issues that they have found over the past year while using their foster portal. These problems range from wanting portal notifications to the design of the current front end to issues with being able to reset a user’s password. With these issues, potential users will most likely turn away from the system and possibly fostering all together (which defeats the whole purpose of the system). With the improvements that we plan on implementing and overall, making the system more user friendly, we hope to prevent this loss of fosters and therefore help BCHS grow this part of their vision.
+            </p>
+        </details>
+        <details>
+            <summary>Outcomes</summary>
+            <p class="project-outcome sub-content">
+                Over the course of our project, we developed new features and services for the client, while also improving the overall user experience for both the client and the potential users. These changes will allow them to be able to operate more efficiently and effectively. Because we changed the way that the sign-up form is presented, users are now able to sign up to be a foster in a much shorter time frame. As we also implemented an email notification system, fosters will also now be able to receive notifications regarding their application status. This same notification system will inform BCHS employees of whether they received a new application, thus allowing the client to have a smoother workflow when managing fosters. Lastly, we gave the old website a complete design overhaul, improving the user experience while also creating more fluidity between the BCHS website and the foster portal. Overall, our project improved the client organization’s capability in managing fosters and in reaching more potential fosters.
+            </p>
+        </details>
+        <details>
+            <summary>Deliverables</summary>
+            <p class="project-deliverable sub-content">
+                At the project’s conclusion, we will be providing technical documentation, design documents, and testing documentation in digital form in order to make future management and editing of the Foster Portal simpler. On top of these deliverables, we will also be deploying the current version of the Foster Application to the BCHS server.  
+            </p>
+        </details>
+    </div>
+    
+    </div>
+</div>
+</body>
+</html>

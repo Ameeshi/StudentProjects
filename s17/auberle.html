@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Auberle</title>
+    <meta content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/project.css">
+
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div class="sidenav" id="menu-sidenav">
+              <ul class="nav navbar-nav">
+                <li class="navbar-text nav-title-text" onclick="closeNav()" id="nav-cmu">Carnegie Mellon University</br>Information Systems</li>
+                <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">All Projects</a></li>
+              </ul>
+              
+              <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects by Semester <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Spring 17</a></li>
+                    <li><a href="#">Spring 16</a></li>
+                  </ul>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Students</a></li>
+              </ul>
+    </div><!-- /.navbar-collapse -->
+<div id="main">
+    <!-- Headder -->
+        <div class="header-main">
+            <a id="back-arrow" href="index.html" >
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <form class=" header-search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+            </form>
+
+            <button type="button" class="navbar-toggle collapsed" onclick="openNav()">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+             </button>
+        </div>
+    <!-- End Header-->
+    <div class="text-things">
+    <h2 class="project-name">Student Projects</h2>
+    <img class="photo" src="images/placeholder.png">
+    <div id="sections">
+        <details>
+            <summary>Team</summary>
+            <ul class="project-team sub-content">
+                <li>Erin Dieringer</li>
+                <li>Matt Gruber</li>
+                <li>RhoEun Song</li>
+            </ul>
+        </details>
+        <details>
+            <summary>Opportunity</summary>
+            <p class="project-opportunity sub-content">
+                Based on the organization's current practices of communication and data management, the main problem the team identified was how Auberle tracks and manages foster care information and records. Auberle employees make multiple trips a day across Allegheny county without any way of updating information regarding their trips in real time. This sometimes leads to overlapping trips in similar areas for multiple employees. Additionally, there is no centralized database or electronic spreadsheet template to track this information; it is primarily done through email and hardcopy paper submissions. Having an easy way to track these trips would save expenses on gas mileage, vehicle costs, hourly wages, and would most importantly allow other aides or specialists to cover additional trips. Solving this problem would not only give Auberle greater control over the management of case transports, but could also improve potential scheduling conflicts with real-time information. 
+            </p>
+        </details>
+        <details>
+            <summary>Outcomes</summary>
+            <p class="project-outcome sub-content">
+                We have developed a responsive web application using Ruby on Rails that serves to manage not only real-time trip information, but also to manage the children’s overall information and employee’s schedules as well. Through extensive amounts of user testing at least every other week, we received insightful feedback that helped us prioritize features and iterate upon our interface design. Our project is also designed to decrease employee’s time spent on writing mass emails notifying other employees of trip cancellations, trips without drivers, and trip reports.
+            </p>
+        </details>
+        <details>
+            <summary>Deliverables</summary>
+            <p class="project-deliverable sub-content">
+                Our deliverables to Auberle will be our deployed application, the repository to our application, and all documentation for the use and maintenance of the application including our final report. The application is our primary deliverable and we will provide Auberle with the URL and our code repository (through a zip file and GitHub repository). We will also give Auberle thorough documentation of how to use the application and how to maintain it (for technical professionals as well as the entire Auberle staff).
+            </p>
+        </details>
+    </div>
+    
+    </div>
+</div>
+</body>
+</html>

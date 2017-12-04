@@ -1,0 +1,6 @@
+Part A
+Sort list: sort.js line 157
+Regex: sort.js line 73
+Animated short: index page only
+
+Part B: search bar, index only
