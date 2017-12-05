@@ -43,6 +43,9 @@ function loadPerson() {
  		wrapper.appendChild(panel);
  		target.appendChild(wrapper);
 	}
+
+	target = document.getElementById("back-arrow");
+	target.href = "../" + person["semester"] + "/" + person["project-code"]+".html";
 }
 
 loadPerson();

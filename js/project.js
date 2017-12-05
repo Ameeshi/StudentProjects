@@ -21,6 +21,10 @@ function loadProject() {
 	target = document.getElementsByClassName("project-team")[0];
 	console.log(proj["team"]);
 
+	if (peoplelist[proj["team"][0]] != undefined){
+			target.innerHTML = "";
+		}
+
 	for (member in proj["team"]) {
 		var person = peoplelist[proj["team"][member]];
 		console.log(person);
@@ -43,6 +47,10 @@ function loadProject() {
 
  		wrapper.appendChild(panel);
  		target.appendChild(wrapper);
+
+ 		if(person != undefined) {
+ 			//target.innerHTML = "";
+ 		}
 	}
 }
 

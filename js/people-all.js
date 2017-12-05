@@ -24,5 +24,5 @@ peoplelist = {
 		"project-code":"batch",
 		"semester":"s17",
 		"team-codes": ["annette-chen", "akash-kejriwal"]
-	}
+	},
 }

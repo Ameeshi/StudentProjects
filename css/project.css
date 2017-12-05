@@ -27,12 +27,12 @@ summary {
 }
 
 .project-team {
-	border: 1px dotted black;
-}
+/*	border: 1px dotted black;
+*/}
 
 .person {
 	display: inline-block;
 	float: none;
 	margin: auto;
-	border: 1px dotted black;
-}
+/*	border: 1px dotted black;
+*/}
