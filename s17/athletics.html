@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pennslvania Resources Council</title>
+    <meta content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/project.css">
+
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div class="sidenav" id="menu-sidenav">
+              <ul class="nav navbar-nav">
+                <li class="navbar-text nav-title-text" onclick="closeNav()" id="nav-cmu">Carnegie Mellon University</br>Information Systems</li>
+                <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">All Projects</a></li>
+              </ul>
+              
+              <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects by Semester <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Spring 17</a></li>
+                    <li><a href="#">Spring 16</a></li>
+                  </ul>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Students</a></li>
+              </ul>
+    </div><!-- /.navbar-collapse -->
+<div id="main">
+    <!-- Headder -->
+        <div class="header-main">
+            <a id="back-arrow" href="index.html" >
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <form class=" header-search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+            </form>
+
+            <button type="button" class="navbar-toggle collapsed" onclick="openNav()">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+             </button>
+        </div>
+    <!-- End Header-->
+    <div class="text-things">
+    <h2 class="project-name">Student Projects</h2>
+    <img class="photo" src="images/placeholder.png">
+    <div id="sections">
+        <details>
+            <summary>Team</summary>
+            <ul class="project-team sub-content">
+                <li>Sai Dhulipalla</li>
+                <li>Rebercca Kern</li>
+                <li>Ziren Zhou</li>
+            </ul>
+        </details>
+        <details>
+            <summary>Opportunity</summary>
+            <p class="project-opportunity sub-content">
+                The equipment desk in the Cohon Center allows students, staff, faculty and guests to rent equipment for use in the athletics facilities. Currently, CMU Athletics manages their equipment rental with Google forms and an excel sheet. Student employees fill out Google forms with basic information identifying the customer and what equipment is checked out. This information is then stored in an Excel sheet and includes fields such as the customer’s name, Andrew ID, email, and the equipment they have checked out. The equipment rental process has been identified as a potential area for improvement.
+            </p>
+        </details>
+        <details>
+            <summary>Outcomes</summary>
+            <p class="project-outcome sub-content">
+                Our team has developed an equipment management system with the capabilities to check in, check out, and manage inventory in a reliable and efficient manner. The checkout process is now automated so that only available equipment is listed and have all customers with an Andrew ID preregistered in the system. Also, to ensure efficiency, we’ve made it so that the check-in process can now be completed with just one click and the inventory process helps determine whether or not the
+                equipment being rented is in fact in stock. Our team worked with both CMU Athletics and the IT department for Student Affairs during the process of development to ensure that the implemented
+                solution would be sustainable. Capacity building with the people of the organization interacting with the application (administrators and student employees) also took place in the forms of user testing and training.
+            </p>
+        </details>
+        <details>
+            <summary>Deliverables</summary>
+            <p class="project-deliverable sub-content">
+                Our final deliverable is the equipment management system web application deployed on the development server for CMU Student Affairs. A private GitHub repository will also be delivered to the Student Affairs IT team. Documentation for the system and a manual on how to use the system from the employee and administrative sides will be delivered as well.  
+            </p>
+        </details>
+    </div>
+    
+    </div>
+</div>
+</body>
+</html>

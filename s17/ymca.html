@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YMCA of Greater Pittsburgh</title>
+    <meta content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/project.css">
+
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div class="sidenav" id="menu-sidenav">
+              <ul class="nav navbar-nav">
+                <li class="navbar-text nav-title-text" onclick="closeNav()" id="nav-cmu">Carnegie Mellon University</br>Information Systems</li>
+                <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">All Projects</a></li>
+              </ul>
+              
+              <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects by Semester <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Spring 17</a></li>
+                    <li><a href="#">Spring 16</a></li>
+                  </ul>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Students</a></li>
+              </ul>
+    </div><!-- /.navbar-collapse -->
+<div id="main">
+    <!-- Headder -->
+        <div class="header-main">
+            <a id="back-arrow" href="index.html" >
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <form class=" header-search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+            </form>
+
+            <button type="button" class="navbar-toggle collapsed" onclick="openNav()">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+             </button>
+        </div>
+    <!-- End Header-->
+    <div class="text-things">
+    <h2 class="project-name">Student Projects</h2>
+    <img class="photo" src="images/placeholder.png">
+    <div id="sections">
+        <details>
+            <summary>Team</summary>
+            <ul class="project-team sub-content">
+                <li>Jake Bittner</li>
+                <li>Eric Chow</li>
+                <li>Abdusamed Sherif</li>
+                <li>Glen Wise</li>
+            </ul>
+        </details>
+        <details>
+            <summary>Opportunity</summary>
+            <p class="project-opportunity sub-content">
+                The YMCA deals with the difficulties that come with logging and managing data by pen and paper. Being able to log this information with tablets or phones, the fragility of paper wouldn’t need to be worried about. Whether misplaced or tardy, the YMCA ends up missing grant funding without the proper reporting. Not having the pressure of misplacing these papers can be hugely beneficial and reduce major inefficiencies in this manual form of “data transfer.”
+            </p>
+        </details>
+        <details>
+            <summary>Outcomes</summary>
+            <p class="project-outcome sub-content">
+                With the completed attendance-tracking application, users of this system can successfully import program information, create and complete attendance sheets for each program, and generate reports on these sheets. YMCA members can use these reports to see how many kids attended each site, when they were signed in/out, and what snacks they received during the program. Additional features include one-click sign-in or sign-out, any-date attendance sheet generation, customized reports according to before-school, after-school, or summer programs, and reports that can range from any two dates selected. These new reports were designed according to the recommendations of Deborah Pricener and Jennifer Bouchard who will use these for data analysis of the programs.
+            </p>
+        </details>
+        <details>
+            <summary>Deliverables</summary>
+            <p class="project-deliverable sub-content">
+                We’ve delivered a full-stack Ruby on Rails application that is deployed using a Digital Ocean server. In addition, we’ve supplied admin credentials, procedures on transferring ownership to their personal Digital Ocean account, and an extended user guide found on the system.
+            </p>
+        </details>
+    </div>
+    
+    </div>
+</div>
+</body>
+</html>

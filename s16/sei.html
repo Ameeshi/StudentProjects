@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SEI Rubric Creator</title>
+    <meta content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/project.css">
+
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div class="sidenav" id="menu-sidenav">
+              <ul class="nav navbar-nav">
+                <li class="navbar-text nav-title-text" onclick="closeNav()" id="nav-cmu">Carnegie Mellon University</br>Information Systems</li>
+                <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">All Projects</a></li>
+              </ul>
+              
+              <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects by Semester <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Spring 17</a></li>
+                    <li><a href="#">Spring 16</a></li>
+                  </ul>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Students</a></li>
+              </ul>
+    </div><!-- /.navbar-collapse -->
+<div id="main">
+    <!-- Headder -->
+        <div class="header-main">
+            <a id="back-arrow" href="index.html" >
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <form class=" header-search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+            </form>
+
+            <button type="button" class="navbar-toggle collapsed" onclick="openNav()">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+             </button>
+        </div>
+    <!-- End Header-->
+    <div class="text-things">
+    <h2 class="project-name">Student Projects</h2>
+    <img class="photo" src="images/placeholder.png">
+    <div id="sections">
+        <details>
+            <summary>Team</summary>
+            <ul class="project-team sub-content">
+                <li>Westin Lohne</li>
+                <li>Arun Marsten</li>
+                <li>Donovan Powers</li>
+                <li>Aamer Rakla</li>
+            </ul>
+        </details>
+        <details>
+            <summary>Opportunity</summary>
+            <p class="project-opportunity sub-content">
+                The SEI is already deep into a project where they are using machine learning and computer vision to automate testing of employees for the Department of Defense (DoD). There are tests users must take to become certified in a given area that are several hours and recorded screencasts. Grading requires a lot of staff hours and is neither sustainable in the long term nor efficient in the short term, so the solution needs to be self-proficient and automated. So, the SEI would like a solution the automatically scores employee's performance in testing scenarios, aka an “auto grader.” Before this can happen, the computer vision system must be trained what to look for. We were tasked with discovering a solution that could allow them to painlessly and quickly create training data for the evaluation system. By allowing users to mark what parts of the video demonstrate proficiency in certain skills, and then allow them to organize these skills into standardized layouts readable by a machine learning system, the computer vision evaluation system will one day be able to automate this task based off the training data.      
+            </p>
+        </details>
+        <details>
+            <summary>Outcomes</summary>
+            <p class="project-outcome sub-content">
+                We have developed an air-gapped web application that can be used to create training data to provide to the SEI’s Computer Vision Machine Learning System. Graders can access the application and create rubrics for different tasks and skills to be exported to the Machine Learning System so it can then identify the same tasks in the assessment recordings.        
+            </p>
+        </details>
+        <details>
+            <summary>Deliverables</summary>
+            <p class="project-deliverable sub-content">
+                The final deliverables include training materials, documentation on design decisions, and the GitHub repository of the Node.JS application. We will also be having a final meeting with the client to ensure they have all the resources they need to understand the application and continue its development when they have time.          
+            </p>
+        </details>
+    </div>
+    
+    </div>
+</div>
+</body>
+</html>

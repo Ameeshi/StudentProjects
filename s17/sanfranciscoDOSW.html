@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>San Francisco Department on the Status of Women</title>
+    <meta content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/project.css">
+
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div class="sidenav" id="menu-sidenav">
+              <ul class="nav navbar-nav">
+                <li class="navbar-text nav-title-text" onclick="closeNav()" id="nav-cmu">Carnegie Mellon University</br>Information Systems</li>
+                <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">All Projects</a></li>
+              </ul>
+              
+              <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects by Semester <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Spring 17</a></li>
+                    <li><a href="#">Spring 16</a></li>
+                  </ul>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Students</a></li>
+              </ul>
+    </div><!-- /.navbar-collapse -->
+<div id="main">
+    <!-- Headder -->
+        <div class="header-main">
+            <a id="back-arrow" href="index.html" >
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <form class=" header-search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+            </form>
+
+            <button type="button" class="navbar-toggle collapsed" onclick="openNav()">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+             </button>
+        </div>
+    <!-- End Header-->
+    <div class="text-things">
+    <h2 class="project-name">Student Projects</h2>
+    <img class="photo" src="images/placeholder.png">
+    <div id="sections">
+        <details>
+            <summary>Team</summary>
+            <ul class="project-team sub-content">
+                <li>Amber Hu</li>
+                <li>Helen Kim</li>
+                <li>Sina Siddiqi</li>
+            </ul>
+        </details>
+        <details>
+            <summary>Opportunity</summary>
+            <p class="project-opportunity sub-content">
+                Each of the funded programs is required to submit quarterly reports on their performance, as well as empirical data on how they use the grants. Currently, all reports and reminders are passed through emails which lead to scattered files that risk becoming lost in the midst of these transactions. After gathering these reports individually, they must be renamed and organized into a specific naming system and directory in order to be processed through the Master Excel for the annual reports, leading to a laborious, unsustainable process. 
+            </p>
+        </details>
+        <details>
+            <summary>Outcomes</summary>
+            <p class="project-outcome sub-content">
+                We are pleased to report that we were able to deliver our clients the promised custom application. The web application has been thoroughly tested by both our team and our clients through multiple iterations and is ready to be used starting with the upcoming fiscal year. All current users, such as the SF DOSW admins and interns, as well as pre-existing grantee programs and their respective users have all been entered into the system, so they each have their own log-in credentials. Each user role has a different level of authorization to ensure privacy and security in the information that is made accessible for each user. Basically, grantee organizations can submit their reports through their dashboard, admins and interns can download and check on file submissions, but admins also have extended abilities that aid the management of data. Additionally, the Master Excel has been reformatted to be much more dynamic and versatile.
+            </p>
+        </details>
+        <details>
+            <summary>Deliverables</summary>
+            <p class="project-deliverable sub-content">
+                We delivered a web application, pre-populated with the current grantee organizations and SF DOSW staff information, as received from the SF DOSW. Additionally, we delivered the following: admin credentials, all the project components set up under the SF DOSW name, updated Master Excel, application manuals for the different level of users, and additional recommendations that the SF DOSW should consider moving forward. 
+            </p>
+        </details>
+    </div>
+    
+    </div>
+</div>
+</body>
+</html>

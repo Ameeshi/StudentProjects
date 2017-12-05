@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phipps Conservatory and Botanical Gardens</title>
+    <meta content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/project.css">
+
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div class="sidenav" id="menu-sidenav">
+              <ul class="nav navbar-nav">
+                <li class="navbar-text nav-title-text" onclick="closeNav()" id="nav-cmu">Carnegie Mellon University</br>Information Systems</li>
+                <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">All Projects</a></li>
+              </ul>
+              
+              <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects by Semester <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Spring 17</a></li>
+                    <li><a href="#">Spring 16</a></li>
+                  </ul>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Students</a></li>
+              </ul>
+    </div><!-- /.navbar-collapse -->
+<div id="main">
+    <!-- Headder -->
+        <div class="header-main">
+            <a id="back-arrow" href="index.html" >
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <form class=" header-search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+            </form>
+
+            <button type="button" class="navbar-toggle collapsed" onclick="openNav()">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+             </button>
+        </div>
+    <!-- End Header-->
+    <div class="text-things">
+    <h2 class="project-name">Student Projects</h2>
+    <img class="photo" src="images/placeholder.png">
+    <div id="sections">
+        <details>
+            <summary>Team</summary>
+            <ul class="project-team sub-content">
+                <li>Jibby Ayo-Ani</li>
+                <li>Suvrath Penmetcha</li>
+                <li>Alex Tsai</li>
+            </ul>
+        </details>
+        <details>
+            <summary>Opportunity</summary>
+            <p class="project-opportunity sub-content">
+                Our clients discussed in depth the importance of not just providing an engaging experience for the visitor, but also influencing people’s attitudes towards sustainability and ultimately effecting a change in their behavior. For the CSL, in particular, it is their goal to influence people to adopt more sustainable lifestyles in their own homes. Specific examples include taking shorter showers to conserve water, taking advantage of natural lighting when possible to reduce energy consumption, and being mindful of their food sources. They have tried to address this goal by investing in a dashboard that shows real-time data though it is designed for scientists and experts instead of the general audience.     
+            </p>
+        </details>
+        <details>
+            <summary>Outcomes</summary>
+            <p class="project-outcome sub-content">
+                Our final outcome was a web application that serves as a companion guide to visitors of the Center for Sustainable Landscapes. The app helps increase the amount of accessible information to learn about the space as well as providing deeper interaction. The web page uses HTML, CSS, and JavaScript together to create a platform for a variety of content whether it be text, images, multiple choice questions, or even graphs with live data.       
+            </p>
+        </details>
+        <details>
+            <summary>Deliverables</summary>
+            <p class="project-deliverable sub-content">
+                The main deliverable to our client is a link to our application (http://phipps-csl.github.io/) which is hosted on GitHub and also a link to the GitHub repository which contains all the source code. We will provide a username and password to the GixtHub account and to the email we used to create the GitHub account. We will provide technical documentation in addition to our solution as a reference and also for future integration with Phipps’s CMS tool called ExpressionEngine. Additionally, we will provide a .zip file containing all the pictures as well as icons we created for the application. Lastly, we will provide the username and password to access Phipps’s live-data.          
+            </p>
+        </details>
+    </div>
+    
+    </div>
+</div>
+</body>
+</html>

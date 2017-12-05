@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Handprinter.org</title>
+    <meta content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/project.css">
+
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div class="sidenav" id="menu-sidenav">
+              <ul class="nav navbar-nav">
+                <li class="navbar-text nav-title-text" onclick="closeNav()" id="nav-cmu">Carnegie Mellon University</br>Information Systems</li>
+                <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">All Projects</a></li>
+              </ul>
+              
+              <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects by Semester <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Spring 17</a></li>
+                    <li><a href="#">Spring 16</a></li>
+                  </ul>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Students</a></li>
+              </ul>
+    </div><!-- /.navbar-collapse -->
+<div id="main">
+    <!-- Headder -->
+        <div class="header-main">
+            <a id="back-arrow" href="index.html" >
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <form class=" header-search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+            </form>
+
+            <button type="button" class="navbar-toggle collapsed" onclick="openNav()">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+             </button>
+        </div>
+    <!-- End Header-->
+    <div class="text-things">
+    <h2 class="project-name">Student Projects</h2>
+    <img class="photo" src="images/placeholder.png">
+    <div id="sections">
+        <details>
+            <summary>Team</summary>
+            <ul class="project-team sub-content">
+                <li>Alex Frazier</li>
+                <li>Serene Gao</li>
+                <li>Meghana Valluri</li>
+            </ul>
+        </details>
+        <details>
+            <summary>Opportunity</summary>
+            <p class="project-opportunity sub-content">
+                Since Handprinter is still in its early stages of development, our team has the opportunity to make a significant impact on the progress of the organization’s primary product – the Handprinting Community. Through this community, individuals submit action ideas that they believe can increase their handprint. These ideas are then be upvoted by other users of the community. Simultaneously, highly-skilled users trained in life-cycle assessment or environmental science contribute by choosing to model action ideas into numerical equations. These models, similar to action ideas, can be graded based on accuracy and validity by other expert users. This creates opportunity for an eventual global suite of mobile applications to access the most upvoted action ideas and best corresponding models. Users of these outside applications can choose an action item they have completed, input in their specific usage or consumption statistics into the model, and calculate their individual handprint. Thus, while Handprinter is a social initiative targeted at increasing environmental consciousness, the mission, at its core, is driven by technology. Rather than focusing on systems that address potential organizational or information management issues, our team has determined that working to develop this Handprinting Community will create the most value for our client. 
+            </p>
+        </details>
+        <details>
+            <summary>Outcomes</summary>
+            <p class="project-outcome sub-content">
+                We have successfully developed a crowd-sourcing platform in the form of a Ruby on Rails webbased application that achieves our initial project vision and matches our client’s requirements. Users can register into the Handprinter Community and submit action ideas. These action ideas can be commented and voted on. Users can train to become modelers, and then can model action ideas using a comprehensive form. Various versions of models are stored per action idea so that a detailed history of models is kept and easily navigable. Administrative users have the ability to change model statuses from ‘complete’ to ‘ready to use’, indicating that a model is sufficiently detailed to implemented in a calculation of a person’s handprint.
+            </p>
+        </details>
+        <details>
+            <summary>Deliverables</summary>
+            <p class="project-deliverable sub-content">
+                We have live hosted our application at www.handprinter2.herokuapp.com. We have turned over a private GitHub repository to our client, as well as trained our client in use of the system. We have created a video that walks through all the functionality of the system, including the various user roles and capabilities. We have compiled a list of potential bugs and issues that developers might run into and recommendations for how to fix them. We have also detailed out all creative decision points and explained the justifications for them. Finally, we have compiled a project roadmap that explains the desired functionality of all future pieces of the Handprinting process. Lastly, we have documented our application code extensively for future maintainers of our project.
+            </p>
+        </details>
+    </div>
+    
+    </div>
+</div>
+</body>
+</html>

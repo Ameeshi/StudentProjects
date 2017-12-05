@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CMU Spring Carnival Committee</title>
+    <meta content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/project.css">
+
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div class="sidenav" id="menu-sidenav">
+              <ul class="nav navbar-nav">
+                <li class="navbar-text nav-title-text" onclick="closeNav()" id="nav-cmu">Carnegie Mellon University</br>Information Systems</li>
+                <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">All Projects</a></li>
+              </ul>
+              
+              <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects by Semester <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Spring 17</a></li>
+                    <li><a href="#">Spring 16</a></li>
+                  </ul>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Students</a></li>
+              </ul>
+    </div><!-- /.navbar-collapse -->
+<div id="main">
+    <!-- Headder -->
+        <div class="header-main">
+            <a id="back-arrow" href="index.html" >
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <form class=" header-search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+            </form>
+
+            <button type="button" class="navbar-toggle collapsed" onclick="openNav()">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+             </button>
+        </div>
+    <!-- End Header-->
+    <div class="text-things">
+    <h2 class="project-name">Student Projects</h2>
+    <img class="photo" src="images/placeholder.png">
+    <div id="sections">
+        <details>
+            <summary>Team</summary>
+            <ul class="project-team sub-content">
+                <li>Akshay Goradia</li>
+                <li>Bruce Lin</li>
+                <li>Rumby Wilson</li>
+            </ul>
+        </details>
+        <details>
+            <summary>Opportunity</summary>
+            <p class="project-opportunity sub-content">
+                The SCC relies on Binder – a Ruby on Rails web application – during Booth to manage tools borrowed by students. While Binder has many useful features like waitlist, watch shift, downtime, and notes. While Binder has incorporated many useful features that received positive feedback from last year’s booth coordinators, there are minor issues to be fixed to avoid odd functional behaviors and to further increase efficiency and user interactions.
+            </p>
+        </details>
+        <details>
+            <summary>Outcomes</summary>
+            <p class="project-outcome sub-content">
+                Following our project vision, we built an enhanced Binder with notification feature, as well as a stable version without this feature as a fail-safe should any unpredictable incident happen over carnival. Both versions proved to be quality. Although the enhanced Binder was shut down during an emergency, our client indicated they were overall very happy with notification feature. For example, they spoke highly of the note scenario because they receive a text message whenever a note is posted to them, claiming this feature the most useful improvement. After shutting down notification, our client rolled back to our fail-safe version of Binder. They were happy with this version as well. Every year, SCC holds a post-carnival review to discuss its performance. Usually Binder errors is on the spot light because of functionality problems. However, Binder was only briefly mentioned this year because of its stable performance during carnival. As our client said, they had the least amount of problems with Binder this year.
+            </p>
+        </details>
+        <details>
+            <summary>Deliverables</summary>
+            <p class="project-deliverable sub-content">
+                Our project is a GitHub open source project. The source code can be found here: https://github.com/sc0v/binder-app. Note that the “Master” branch contains the deployed code during carnival. The “17/goat/main” branch was the primary development branch and the “hotfixes” branch was used by our client and us for emergency purposes during carnival. 
+            </p>
+        </details>
+    </div>
+    
+    </div>
+</div>
+</body>
+</html>

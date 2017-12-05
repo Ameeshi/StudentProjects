@@ -12,17 +12,28 @@ function LoadSemesterPage(sem) {
  	sem.project = projects;
 
  	displayedProjects = [];
-
  	var index = 0;
+ 	var currentRow;
+
+ 	for (proj in projects) {
+ 		if (index % 3 === 0) {
+ 			currentRow = AddRow();
+ 		}
+ 		AddPage(currentRow, index);
+ 		index++;
+ 	}
+
+ 	index = 0;
  	for (proj in projects ) {
- 		displayedProjects.push(proj);
+ 		displayedProjects.push(projects[proj]);
  		var source = projects[proj].img;
 
  		var card = document.getElementById("card" + index);
+ 		// console.log(card);
 
- 		card.childNodes[1].childNodes[0].src = projects[proj].img;
- 		card.childNodes[1].childNodes[2].innerHTML = projects[proj].name;
- 		card.childNodes[1].href = sem.code + "/" + projects[proj].code + ".html"
+ 		card.childNodes[0].childNodes[0].src = projects[proj].img;
+ 		card.childNodes[0].childNodes[1].innerHTML = projects[proj].name;
+ 		card.childNodes[0].href = sem.code + "/" + projects[proj].code + ".html"
  		index++;
  	}
 }
@@ -66,25 +77,39 @@ function LoadAllProjectsPage(){
 
 function LoadSearchPage() {
 	displayedProjects = [];
-	var target = window.location.pathname;
+	var target = window.location.href;
 	var termsAll = target.split("="); 			//Always disregard first and last index
-	var terms = termsAll.split("+");
+	var terms = termsAll[1].split("+");
+	console.log(terms);
 
 	for (sem in allproj) {
  		var temp = ParseSemester(allproj[sem]);
  		for (name in temp) {
  			var valid = false;
- 			for (var i = 0; i < terms.length; i++) {   // itterating through tag list
- 				for (var j = 0; j < temp[name].tags.length; j++) { // itterating through all of the tags
- 					if (/temp[name].tags[j]/i.search(/terms[i]/i) != -1) {  // Case insensitive search of partial tags
+ 			
+ 			for (var j = 0; j < temp[name].tags.length; j++) { // itterating through all of the tags
+ 				for (var i = 0; i < terms.length; i++) {   // itterating through tag list
+ 					var test = terms[i];
+ 					if (temp[name].tags[j].search(new RegExp(test)) != -1) {  // Case insensitive search of partial tags
  						valid = true;
  					}
  				} 
  			}
  			if (valid){
+ 				console.log(temp[name]);
+ 				temp[name].semester = sem;
  				displayedProjects.push (temp[name]);
  			}
  		}
+ 	}
+
+ 	var index = 0;
+ 	var currentRow;
+ 	for (; index < displayedProjects.length; index++) {
+ 		if (index % 3 === 0) {
+ 			currentRow = AddRow();
+ 		}
+ 		AddPage(currentRow, index);
  	}
 
  	for (var i = 0; i < displayedProjects.length; i++) {
@@ -96,8 +121,10 @@ function LoadSearchPage() {
 
  		card.childNodes[0].childNodes[0].src = displayedProjects[i].img;
  		card.childNodes[0].childNodes[1].innerHTML = displayedProjects[i].name;
- 		card.childNodes[0].href = sem.code + "/" + displayedProjects[i].code + ".html"
+ 		card.childNodes[0].href = displayedProjects[i].semester + "/" + displayedProjects[i].code + ".html"
  	}
+
+ 	console.log(displayedProjects);
 }
 
 function ParseSemester(sem) {
@@ -154,6 +181,9 @@ function LoadPage() {
 
 		LoadSemesterPage(allproj.s16);
 
+	} else if (target.includes("search.html")) {
+		LoadSearchPage();
+
 	} else {
 		LoadAllProjectsPage();
 	}
@@ -165,16 +195,19 @@ function SortAlphabetical() {
 
 	sort (0, displayedProjects.length);
 	// displayedProjects.sort();
+
+	console.log(displayedProjects);
 	for (var i = 0; i < displayedProjects.length; i++) {
 
  		//console.log(displayedProjects[i])
 
  		var card = document.getElementById("card" + i);
  		console.log(card);
+ 		console.log(displayedProjects[i]);
 
  		card.childNodes[0].childNodes[0].src = displayedProjects[i].img;
  		card.childNodes[0].childNodes[1].innerHTML = displayedProjects[i].name;
- 		card.childNodes[0].href = sem.code + "/" + displayedProjects[i].code + ".html"
+ 		card.childNodes[0].href = displayedProjects[i].semester + "/" + displayedProjects[i].code + ".html"
  	}
 
  	console.log(displayedProjects);
@@ -182,12 +215,17 @@ function SortAlphabetical() {
 
 function merge(lower, mid, upper) {
 	// console.log(displayedProjects[lower].code);
-	// console.log(lower + ", " + mid + ", " + upper)
+	console.log(lower + ", " + mid + ", " + upper)
+	for (var j = lower; j < upper; j++) {
+		console.log(displayedProjects[j]);
+	}
+
 	var temp = [];
 	var index = 0;
 	var a = lower;
 	var b = mid;
 	while (a < mid && b < upper) {
+		console.log(displayedProjects[a].name + " vs " + displayedProjects[b].name)
 		if (displayedProjects[a].name < displayedProjects[b].name) {
 			temp[index] = displayedProjects[a];
 			a++;
@@ -208,6 +246,8 @@ function merge(lower, mid, upper) {
 		index++;
 	}
 
+	console.log(temp);
+
 	index = 0;
 	j = lower;
 	while (j < upper) {
@@ -218,17 +258,29 @@ function merge(lower, mid, upper) {
 }
 
 function sort(lower, upper) {
-	// console.log(lower + ", " + upper)
+	console.log(lower + ", " + upper)
 	if (upper - lower <= 1) {
 		return;
 	}
 
-	mid = Math.floor((upper + lower) / 2);
+	var mid = Math.floor((upper + lower) / 2);
+	console.log(lower + ", " + mid + ", " + upper)
 
 
 	sort(lower, mid);
 	sort(mid, upper);
+	console.log(lower + ", " + mid + ", " + upper)
 	merge(lower, mid, upper);
+}
+
+function sortProjects() {
+	var dropdown = document.getElementById("choices");
+	var means = choices.value;
+	console.log(means);
+	if (means === "name") {
+		SortAlphabetical();
+	}
+	
 }
 
 LoadPage();

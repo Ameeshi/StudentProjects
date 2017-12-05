@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pennsylvania Resources Council</title>
+    <meta content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/project.css">
+
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div class="sidenav" id="menu-sidenav">
+              <ul class="nav navbar-nav">
+                <li class="navbar-text nav-title-text" onclick="closeNav()" id="nav-cmu">Carnegie Mellon University</br>Information Systems</li>
+                <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">All Projects</a></li>
+              </ul>
+              
+              <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects by Semester <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Spring 17</a></li>
+                    <li><a href="#">Spring 16</a></li>
+                  </ul>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Students</a></li>
+              </ul>
+    </div><!-- /.navbar-collapse -->
+<div id="main">
+    <!-- Headder -->
+        <div class="header-main">
+            <a id="back-arrow" href="index.html" >
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <form class=" header-search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+            </form>
+
+            <button type="button" class="navbar-toggle collapsed" onclick="openNav()">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+             </button>
+        </div>
+    <!-- End Header-->
+    <div class="text-things">
+    <h2 class="project-name">Student Projects</h2>
+    <img class="photo" src="images/placeholder.png">
+    <div id="sections">
+        <details>
+            <summary>Team</summary>
+            <ul class="project-team sub-content">
+                <li>Nikita Bokil</li>
+                <li>Ann Chen</li>
+                <li>Connor Moore</li>
+            </ul>
+        </details>
+        <details>
+            <summary>Opportunity</summary>
+            <p class="project-opportunity sub-content">
+                PRC hosts numerous collection events over the summer for household chemicals, e-waste, pharmaceuticals, and other hard to recycle items. Each collection event takes place in a parking lot, with approximately 1,000 cars coming in and out in 4 hours. During this time, people wait almost an hour in line until their materials are collected from the trunk by volunteers and they are sent on their way. PRC has been unable to effectively collect information on any of the recyclers, aka their “customers”, and is looking for a data collection and analysis tool. This information is important to the organization for two main reasons: data-driven decision making and customer outreach. With the proper visualizations, PRC can present solid data to municipalities and sponsors in order to increase their funding and support environmental initiatives. Additionally, PRC has had difficulty engaging current members and attracting new ones, and would benefit from a tool that would increase their membership value proposition.     
+            </p>
+        </details>
+        <details>
+            <summary>Outcomes</summary>
+            <p class="project-outcome sub-content">
+                Our project timeline involved evaluating various survey and data analysis tools, user testing the tools at PRC events, deploying the survey at PRC’s first collection event, and developing the events platform. We ensured the solutions would be sustainable by training the community partners and providing thorough documentation. We also involved PRC’s technology consultant, FiremanCreative, to discuss the events platform and integrate it with PRC’s website. Our efforts helped us achieve the goal of providing value to PRC by asking questions and guiding their decisions surrounding technology.         
+            </p>
+        </details>
+        <details>
+            <summary>Deliverables</summary>
+            <p class="project-deliverable sub-content">
+                Our final deliverables to PRC include the following:
+                1. SurveyGizmo subscription, training, documentation, and integration into PRC business processes
+                2. BatchGeo training and documentation for map visualizations
+                3. Events platform to be integrated into PRC website and display upcoming events          
+            </p>
+        </details>
+    </div>
+    
+    </div>
+</div>
+</body>
+</html>

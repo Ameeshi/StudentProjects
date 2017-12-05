@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Center for Building Performance and Diagnostics</title>
+    <meta content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/project.css">
+
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div class="sidenav" id="menu-sidenav">
+              <ul class="nav navbar-nav">
+                <li class="navbar-text nav-title-text" onclick="closeNav()" id="nav-cmu">Carnegie Mellon University</br>Information Systems</li>
+                <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">All Projects</a></li>
+              </ul>
+              
+              <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects by Semester <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Spring 17</a></li>
+                    <li><a href="#">Spring 16</a></li>
+                  </ul>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Students</a></li>
+              </ul>
+    </div><!-- /.navbar-collapse -->
+<div id="main">
+    <!-- Headder -->
+        <div class="header-main">
+            <a id="back-arrow" href="index.html" >
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <form class=" header-search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+            </form>
+
+            <button type="button" class="navbar-toggle collapsed" onclick="openNav()">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+             </button>
+        </div>
+    <!-- End Header-->
+    <div class="text-things">
+    <h2 class="project-name">Student Projects</h2>
+    <img class="photo" src="images/placeholder.png">
+    <div id="sections">
+        <details>
+            <summary>Team</summary>
+            <ul class="project-team sub-content">
+                <li>Brad Chin</li>
+                <li>Karen Segal</li>
+                <li>Maggie Yu</li>
+            </ul>
+        </details>
+        <details>
+            <summary>Opportunity</summary>
+            <p class="project-opportunity sub-content">
+                In the spring of 2015, the CBPD partnered with an Information Systems student project team with the goal of addressing the lack of engagement within the CMU community to conserve energy on campus. The previous team conducted an extensive amount of research in order to determine the cause of the lack of engagement problem, and eventually chose to build a Django web application with the goals of improving the CMU Facilities Management Services (FMS) service request process and bridging the gap between the CMU community and FMS personnel. Through the application named ConnectFMS, members of the CMU community can make posts on energy conservation issues as well as utility problems they see around campus by taking a photo and writing a short description. After seeing the work produced by the previous team, the client hoped to have ConnectFMS deployed on their own server in order to support the collection of real usage data from the campus community. Furthermore, the client wanted to test the existing application in a realistic environment in order receive user feedback to evaluate the effectiveness of the application and make improvements and modifications.  
+            </p>
+        </details>
+        <details>
+            <summary>Outcomes</summary>
+            <p class="project-outcome sub-content">
+                We improved upon the Django web application we inherited from the previous student team by conducting three rounds of user testing, incorporating user feedback into the application based on these results, and implementing requested new features for ConnectFMS. We were able to deploy our application on the client’s server with the Andrew Shibboleth authentication system installed before we recruited real users to test out our application from the CMU community. In addition, we presented our work and findings from the semester to two representatives from FMS.    
+            </p>
+        </details>
+        <details>
+            <summary>Deliverables</summary>
+            <p class="project-deliverable sub-content">
+                ConnectFMS is currently deployed on the client’s server, and we have shared our code repository with the client on Bitbucket. We also created technical documentation containing important information needed to access and maintain the application in the future.      
+            </p>
+        </details>
+    </div>
+    
+    </div>
+</div>
+</body>
+</html>

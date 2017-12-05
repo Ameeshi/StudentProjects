@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Holocaust Center of Pittsburgh</title>
+    <meta content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/project.css">
+
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div class="sidenav" id="menu-sidenav">
+              <ul class="nav navbar-nav">
+                <li class="navbar-text nav-title-text" onclick="closeNav()" id="nav-cmu">Carnegie Mellon University</br>Information Systems</li>
+                <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">All Projects</a></li>
+              </ul>
+              
+              <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects by Semester <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Spring 17</a></li>
+                    <li><a href="#">Spring 16</a></li>
+                  </ul>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Students</a></li>
+              </ul>
+    </div><!-- /.navbar-collapse -->
+<div id="main">
+    <!-- Headder -->
+        <div class="header-main">
+            <a id="back-arrow" href="index.html" >
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <form class=" header-search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+            </form>
+
+            <button type="button" class="navbar-toggle collapsed" onclick="openNav()">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+             </button>
+        </div>
+    <!-- End Header-->
+    <div class="text-things">
+    <h2 class="project-name">Student Projects</h2>
+    <img class="photo" src="images/placeholder.png">
+    <div id="sections">
+        <details>
+            <summary>Team</summary>
+            <ul class="project-team sub-content">
+                <li>Sid Malladi</li>
+                <li>Sarah Reyes-Franco</li>
+                <li>Emily Su</li>
+            </ul>
+        </details>
+        <details>
+            <summary>Opportunity</summary>
+            <p class="project-opportunity sub-content">
+                The Holocaust Center currently is unable to properly track visitor information and event attendance. The staff has tried different methods such as a paper-sign in sheet and iPad version, but has faced issues such as loss of information and difficulty keeping track of a large number of attendees. Solving this issue through a digital system is important because the system would 1) make the check-in process at events and gallery walk-ins more efficient, 2) increase the center’s ability to understand their visitor base, and 3) help make decisions for when the center should host events and open their gallery to the public. With better tracking of visitors and events, the center would have data to support decision making on what their visitors are interested in, when their popular hours and events are, and be able to program more tailored events to their visitor base.  
+            </p>
+        </details>
+        <details>
+            <summary>Outcomes</summary>
+            <p class="project-outcome sub-content">
+                Our team created a check-in and analytics system for the center to keep track of visitors and view information about events and visitors. We also implemented a follow-up email system to give visitors the option to complete their profile for more targeted events tailored toward their interests. We created data analytic pages to include recommendations for the best time to have events, which will help with their operating hours and make staffing decisions. 
+                We also worked with our client to create a new visitor check-in flow to make transitioning from paper to digital a smooth and efficient process. By creating two separate flows of pre-registration and new visitor, we were able to test our newly designed process at an event with over 400 attendees, helping them operate one of their smoothest check-in processes in the last couple years. 
+                Additionally, our project has helped with the center’s discussion about the possibility of creating a membership status for their visitors, as they would be able to appropriately track donor status and event engagement. 
+            </p>
+        </details>
+        <details>
+            <summary>Deliverables</summary>
+            <p class="project-deliverable sub-content">
+                Our deliverables include a hosted, responsive website accessible from any device, documentation for staff and volunteer members on how to operate our system, and recommendations for future information system projects for the center. 
+            </p>
+        </details>
+    </div>
+    
+    </div>
+</div>
+</body>
+</html>

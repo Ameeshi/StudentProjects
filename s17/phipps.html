@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phipps Conservatory</title>
+    <meta content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/project.css">
+
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div class="sidenav" id="menu-sidenav">
+              <ul class="nav navbar-nav">
+                <li class="navbar-text nav-title-text" onclick="closeNav()" id="nav-cmu">Carnegie Mellon University</br>Information Systems</li>
+                <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">All Projects</a></li>
+              </ul>
+              
+              <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects by Semester <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Spring 17</a></li>
+                    <li><a href="#">Spring 16</a></li>
+                  </ul>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Students</a></li>
+              </ul>
+    </div><!-- /.navbar-collapse -->
+<div id="main">
+    <!-- Headder -->
+        <div class="header-main">
+            <a id="back-arrow" href="index.html" >
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <form class=" header-search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+            </form>
+
+            <button type="button" class="navbar-toggle collapsed" onclick="openNav()">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+             </button>
+        </div>
+    <!-- End Header-->
+    <div class="text-things">
+    <h2 class="project-name">Student Projects</h2>
+    <img class="photo" src="images/placeholder.png">
+    <div id="sections">
+        <details>
+            <summary>Team</summary>
+            <ul class="project-team sub-content">
+                <li>Natalya Buchwald</li>
+                <li>Ally Sorge</li>
+                <li>Johnny Wu</li>
+            </ul>
+        </details>
+        <details>
+            <summary>Opportunity</summary>
+            <p class="project-opportunity sub-content">
+                One of PRC’s services to the community is hosting the Recycling Hotline for the Pennsylvania Department of Environmental Protection. PRC receives calls from citizens across the state asking
+                for recycling information on a variety of different items. This process requires data to be managed in two places: searching for a location near the caller where the item can be recycled and tracking
+                caller information. The main problems in their previous process was that: (1) PRC’s information was stored in Excel spreadsheets making searching through their data hard to manage (2) The
+                recycling locations are ever-changing and there was no indication of when data was last verified (3) Tracking calls and lookups both were two separate processes that used the same information, but
+                required PRC to do double the work for each call.
+            </p>
+        </details>
+        <details>
+            <summary>Outcomes</summary>
+            <p class="project-outcome sub-content">
+                The most important outcome is the climate change knowledge-base of the general Phipps visitor.
+                After gaining environmental knowledge from our game, our program will store the accuracy and
+                time of each trivia question answered. Eventually, our program will have the ability to determine if
+                the climate change knowledge based of the general visitor has improved over time. Secondly, our
+                team comprehensively tested our game’s interactivity and engagement level with over fifty people.
+                We hosted one round of employee visitor tests to engage the Phipps staff base in our project.
+                Afterwards, we conducted three rounds of on-site visitor tests to see our solution in context. These
+                tests were crucial in our development and perfected our game’s user experience. Furthermore,
+                another outcome is our game’s sustainability. Through our thoroughly collaborative process, our
+                clients at Phipps have a firm grasp on how to continue to expand our team’s creation. There are
+                opportunities for more trivia questions and visual graphics to account for the growing climate
+                change research.
+            </p>
+        </details>
+        <details>
+            <summary>Deliverables</summary>
+            <p class="project-deliverable sub-content">
+                Our team will provide our client the fully deployed game. We also will provide full access to the
+                repository, currently located on GitHub and Heroku. This access will allow our client to sustain the
+                long-term relevance of our program. Lastly, our team will provide a clear and detailed tutorial on
+                how to sustain our program, including how to create and edit content for the game
+            </p>
+        </details>
+    </div>
+    
+    </div>
+</div>
+</body>
+</html>

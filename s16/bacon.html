@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Six Degrees of Francis Bacon</title>
+    <meta content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/project.css">
+
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div class="sidenav" id="menu-sidenav">
+              <ul class="nav navbar-nav">
+                <li class="navbar-text nav-title-text" onclick="closeNav()" id="nav-cmu">Carnegie Mellon University</br>Information Systems</li>
+                <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">All Projects</a></li>
+              </ul>
+              
+              <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects by Semester <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Spring 17</a></li>
+                    <li><a href="#">Spring 16</a></li>
+                  </ul>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Students</a></li>
+              </ul>
+    </div><!-- /.navbar-collapse -->
+<div id="main">
+    <!-- Headder -->
+        <div class="header-main">
+            <a id="back-arrow" href="index.html" >
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <form class=" header-search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+            </form>
+
+            <button type="button" class="navbar-toggle collapsed" onclick="openNav()">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+             </button>
+        </div>
+    <!-- End Header-->
+    <div class="text-things">
+    <h2 class="project-name">Student Projects</h2>
+    <img class="photo" src="images/placeholder.png">
+    <div id="sections">
+        <details>
+            <summary>Team</summary>
+            <ul class="project-team sub-content">
+                <li>David Gao</li>
+                <li>Max Harlynking</li>
+                <li>Amy Li</li>
+            </ul>
+        </details>
+        <details>
+            <summary>Opportunity</summary>
+            <p class="project-opportunity sub-content">
+                Crowdsourcing is an essential element to the Six Degrees of Francis Bacon project - supplying the information for the database. Unfortunately, the main problem the project currently faces is the lack of user activity and contribution. Some of the project’s ideal contributors, active academics, lack the time or incentive to contribute to the project’s network. In order to incentivize users, the group hopes to implement interactive features that encourage users to contribute to the website’s network. Once users feel more incentivized to contribute, whether that be through a bar to note their progress or by providing a new way to contribute to the website, Six Degrees of Francis Bacon can grow at a steadier rate and expand its network. This would help the project improve its service, which in turn would help generate more interest and perhaps encourage more contributions to the site. 
+            </p>
+        </details>
+        <details>
+            <summary>Outcomes</summary>
+            <p class="project-outcome sub-content">
+                The project consisted of a three-phased solution. The first phase included implementing a point system and updated user profile page. The point system would help users keep track of their progress, while updating the user profile would help users see how many points they have and encourage community interaction. The second phase was a leaderboard system. The leaderboard would help users compare their contribution progress to other users and further incentivize users to see their name on the main page of the site. The third phase was a new way to contribute to the database that included more interactive features. This phase would be more visually appealing than the old form to invite users to try more interactive ways of contributing. The team also redesigned portions of the home page to focus more on the digital network map to draw new users in.
+                Throughout the process, the team consistently updated the clients on the design process to ensure the new designs were aligned with the project’s mission and existing design. The team also conducted multiple usability testing sessions to gain feedback on the current website’s design and the team’s new design features.     
+            </p>
+        </details>
+        <details>
+            <summary>Deliverables</summary>
+            <p class="project-deliverable sub-content">
+                The final deliverable includes a deployed version of all three phases and the additional home page design changes. The code will be accessible to the clients via GitHub.         
+            </p>
+        </details>
+    </div>
+    
+    </div>
+</div>
+</body>
+</html>

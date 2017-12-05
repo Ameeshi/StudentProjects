@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kodiak Island Borough School District</title>
+    <meta content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/project.css">
+
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div class="sidenav" id="menu-sidenav">
+              <ul class="nav navbar-nav">
+                <li class="navbar-text nav-title-text" onclick="closeNav()" id="nav-cmu">Carnegie Mellon University</br>Information Systems</li>
+                <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">All Projects</a></li>
+              </ul>
+              
+              <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects by Semester <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Spring 17</a></li>
+                    <li><a href="#">Spring 16</a></li>
+                  </ul>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Students</a></li>
+              </ul>
+    </div><!-- /.navbar-collapse -->
+<div id="main">
+    <!-- Headder -->
+        <div class="header-main">
+            <a id="back-arrow" href="index.html" >
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <form class=" header-search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+            </form>
+
+            <button type="button" class="navbar-toggle collapsed" onclick="openNav()">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+             </button>
+        </div>
+    <!-- End Header-->
+    <div class="text-things">
+    <h2 class="project-name">Student Projects</h2>
+    <img class="photo" src="images/placeholder.png">
+    <div id="sections">
+        <details>
+            <summary>Team</summary>
+            <ul class="project-team sub-content">
+                <li>Sebastian Guerrero Cardenas</li>
+                <li>Chris Lewis</li>
+                <li>Sophie Zhao</li>
+            </ul>
+        </details>
+        <details>
+            <summary>Opportunity</summary>
+            <p class="project-opportunity sub-content">
+                KIBSD experiences issues with its scalability and usability of the current Pickr scheduling tool. It works for bi-weekly tutorial rescheduling, but is only being used by Kodiak Middle School. Other schools do not have access to this technology because it currently cannot be distributed and access instructions are unclear. With a distributable application that does not require complicated installation, Kodiak Middle School could disperse this application with all of Kodiak Island Borough School District or any school who is interested in utilizing RTI scheduling.
+            </p>
+        </details>
+        <details>
+            <summary>Outcomes</summary>
+            <p class="project-outcome sub-content">
+                Our solution, Pickr2.0, is a custom-built Node.js application that runs on a SQLite3 database packaged as a desktop application that facilitates easy download and distribution for other schools to use. Since user interface was a prominent concern for our client, we managed to keep the current AngularJS front-end and connect it to our Node back-end maintaining the same user experience as the prototype application. With ease-of-use and replicability in mind, we ensured that our Pickr2.0 behaved akin to a native desktop app with clear, simple download and usage instructions. Our solution provides a robust RTI scheduling application that anyone can download and use. In alignment with Mr. Hargraves’ overarching goal, Pickr2.0 can easily be distributed to any other school that wants to implement this type of curriculum, propagating KIBSD as an innovator in educational technology throughout the nation.
+            </p>
+        </details>
+        <details>
+            <summary>Deliverables</summary>
+            <p class="project-deliverable sub-content">
+                The final packaged application is hosted on GitHub Pages (kibsd-tech.github.io/Hosting-Pickr) has been sent to Mr. Hargraves for use in Kodiak Middle School  and distribution anywhere else. In addition, we transferred ownership of Pickr2.0’s GitHub repository which includes extensive technical documentation. 
+            </p>
+        </details>
+    </div>
+    
+    </div>
+</div>
+</body>
+</html>

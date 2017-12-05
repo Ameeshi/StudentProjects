@@ -118,6 +118,6 @@ img {
 
 }
 
-input[type=text]:focus {
-	width: 80%;  /*Remove for actual release*/
-}
+/*input[type=text]:focus {
+	width: 80%;  Remove for actual release
+}*/

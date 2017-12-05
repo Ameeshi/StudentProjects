@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pennsylvania Resources Council</title>
+    <meta content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/project.css">
+
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div class="sidenav" id="menu-sidenav">
+              <ul class="nav navbar-nav">
+                <li class="navbar-text nav-title-text" onclick="closeNav()" id="nav-cmu">Carnegie Mellon University</br>Information Systems</li>
+                <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">All Projects</a></li>
+              </ul>
+              
+              <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects by Semester <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Spring 17</a></li>
+                    <li><a href="#">Spring 16</a></li>
+                  </ul>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Students</a></li>
+              </ul>
+    </div><!-- /.navbar-collapse -->
+<div id="main">
+    <!-- Headder -->
+        <div class="header-main">
+            <a id="back-arrow" href="index.html" >
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <form class=" header-search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+            </form>
+
+            <button type="button" class="navbar-toggle collapsed" onclick="openNav()">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+             </button>
+        </div>
+    <!-- End Header-->
+    <div class="text-things">
+    <h2 class="project-name">Student Projects</h2>
+    <img class="photo" src="images/placeholder.png">
+    <div id="sections">
+        <details>
+            <summary>Team</summary>
+            <ul class="project-team sub-content">
+                <li>Sai Dhulipalla</li>
+                <li>Rebecca Kern</li>
+                <li>Ziren Zhou</li>
+            </ul>
+        </details>
+        <details>
+            <summary>Opportunity</summary>
+            <p class="project-opportunity sub-content">
+                One of PRC’s services to the community is hosting the Recycling Hotline for the Pennsylvania Department of Environmental Protection. PRC receives calls from citizens across the state asking for recycling information on a variety of different items. This process requires data to be managed in two places: searching for a location near the caller where the item can be recycled and tracking caller information. The main problems in their previous process was that: (1) PRC’s information was stored in Excel spreadsheets making searching through their data hard to manage (2) The recycling locations are ever-changing and there was no indication of when data was last verified (3) Tracking calls and lookups both were two separate processes that used the same information, but required PRC to do double the work for each call.    
+            </p>
+        </details>
+        <details>
+            <summary>Outcomes</summary>
+            <p class="project-outcome sub-content">
+                Throughout the iterative consultation process, the application was deployed weekly for user feedback. Each week suggested changes and other newer features were added. During the semester, there were a list of features, bugs, etc. for us to implement that was consistently updated. These action items were ranked by importance of functionality to the overall application and completed accordingly. From low fidelity wireframes to our MVP to our final product, the user and the experience of taking a call and searching for what the caller had asked was prioritized. PRC worked with us closely to be sure that we were on the same page as we developed a solution to their problems.         
+            </p>
+        </details>
+        <details>
+            <summary>Deliverables</summary>
+            <p class="project-deliverable sub-content">
+                Our deliverable is a web application built with Ruby on Rails that can record hotline call information in a spreadsheet, search for recycling locations in PA by county and zip code, and verify the integrity of the information in the database. We have preloaded the database with information from PRC’s current spreadsheets and included the git repository containing the code, and documentation and tutorials about the system to help train future employees.          
+            </p>
+        </details>
+    </div>
+    
+    </div>
+</div>
+</body>
+</html>
