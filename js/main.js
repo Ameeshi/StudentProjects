@@ -35,12 +35,13 @@ function Semester(code, sem, year, path) {
 
 // Create "Project" object
 
-function Project(code, name, img, team, tags) {
+function Project(code, name, img, team, tags, semester) {
 	this.code = code;							// HTML address. Also will be used as a key
 	this.name = name;							// Project name
 	this.img = img;								// Image address/filename
 	this.team = team;							// List of people who worked on the team. Should contain the code of people objects
 	this.tags = tags;							// List of tags associated with this project
+	this.sem = semester;
 }
 
 // Create "Student" object

@@ -25,3 +25,14 @@ summary {
 .sub-content {
 	font-size: 1.1em;
 }
+
+.project-team {
+	border: 1px dotted black;
+}
+
+.person {
+	display: inline-block;
+	float: none;
+	margin: auto;
+	border: 1px dotted black;
+}

@@ -70,7 +70,8 @@ function LoadAllProjectsPage(){
  		card.childNodes[0].childNodes[0].src = displayedProjects[i].img;
  		card.childNodes[0].childNodes[0].className = "img-circle";
  		card.childNodes[0].childNodes[1].innerHTML = displayedProjects[i].name;
- 		card.childNodes[0].href = sem.code + "/" + displayedProjects[i].code + ".html"
+ 		card.childNodes[0].href = displayedProjects[i].sem + "/" + displayedProjects[i].code + ".html"
+ 		console.log(displayedProjects[i]);
  	}
 
  	console.log(displayedProjects);
@@ -124,7 +125,7 @@ function LoadSearchPage() {
  		card.childNodes[0].childNodes[0].src = displayedProjects[i].img;
  		card.childNodes[0].childNodes[0].className = "img-circle";
  		card.childNodes[0].childNodes[1].innerHTML = displayedProjects[i].name;
- 		card.childNodes[0].href = displayedProjects[i].semester + "/" + displayedProjects[i].code + ".html"
+ 		card.childNodes[0].href = displayedProjects[i].sem + "/" + displayedProjects[i].code + ".html"
  	}
 
  	console.log(displayedProjects);
@@ -135,7 +136,7 @@ function ParseSemester(sem) {
  	var projects = {};
 
 	$.each(projectlist[sem.path], function(key, value) {
-		projects[key] = new Project(value.code, value.name,  value.image, value.team, value.tags);
+		projects[key] = new Project(value.code, value.name,  value.image, value.team, value.tags, value.semester);
 
 	});
 
