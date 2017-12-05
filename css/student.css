@@ -13,7 +13,6 @@ p {
 }
 .profile {
 	text-align: center;
-	margin: auto;
 	margin-top: 20px;
 }
 
@@ -22,13 +21,14 @@ p {
 	height: 90%;
 }
 
-.profile {
-	text-align: center;
+.team {
+	margin-top: 20px;
 }
 
-.person:first-child {
+.person {	
+	float: none;
+	margin: auto;
 	display: inline-block;
-	margin-left: 15%;
 }
 
 

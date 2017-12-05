@@ -7,10 +7,19 @@
 	margin: 0px;
 }
 
+.dropdown-menu li {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
 h1 {
 	font-family: 'Lato';
 	font-weight: bold;
 	margin-bottom: 20px;
+}
+
+.nav>li .divider {
+	display: none;
 }
 
 .navbar-toggle .icon-bar {
@@ -22,7 +31,7 @@ h1 {
 }
 
 .navbar-toggle {
-	position: fixed;
+	position: absolute;
 	padding: 0px;
 	background-color: transparent;
 	margin-left: 90%;

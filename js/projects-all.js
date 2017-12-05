@@ -3,242 +3,274 @@ projectlist =
 {
 "spring17" : {
     "batch" : {
-        "code":"best-of-the-batch-17",
+        "code":"batch",
         "name":"Best of the Batch Foundation",
-        "image":"images/circle.png",
+        "image":"images/batch.png",
         "team":["annette-chen","akash-kejriwal","jeremy-lee"],
-        "tags":["best","batch","harvey", "sports", "Latasha Wilson"]
+        "tags":["best","batch","harvey", "sports", "Latasha Wilson"],
+        "semester":"s17"
     },
 
     "handprinter" : {
         "code":"handprinter",
-        "name":"Handprinter.org",
-        "image":"images/circle.png",
+        "name":"Handprinter",
+        "image":"images/handprinter.png",
         "team":["alex-frazier","serene-gao","meghana-valluri"],
-        "tags":["hand", "printer", "handprinter", "planet", "environment", "Gregory Norris"]
+        "tags":["hand", "printer", "handprinter", "planet", "environment", "Gregory Norris"],
+        "semester":"s17"
     },
 
     "holocaust" : {
-        "code":"holocaust-center-of-pittsburgh",
+        "code":"holocaust",
         "name":"Holocaust Center of Pittsburgh",
-        "image":"images/circle.png",
-        "team":["sid-malladi","sarah-reyes-franco","emily su"],
-        "tags":["holocaust", "center", "non-profit", "exhibits", "Lauren Bairnsfather"]
+        "image":"images/holocaust.png",
+        "team":["sid-malladi","sarah-reyes-franco","emily-su"],
+        "tags":["holocaust", "center", "non-profit", "exhibits", "Lauren Bairnsfather"],
+        "semester":"s17"
     },
 
     "cmupds" : {
-        "code":"cmu-professional-development",
+        "code":"cmupds",
         "name":"CMU Professional Development Services",
-        "image":"images/circle.png",
+        "image":"images/placeholder.png",
         "team":["travis-chambers","richrd-huang","piyush-puri"],
-        "tags":["professional", "development", "growth", "networking", "Kim Abel", "Sarah Emory", "Adam Marks"]
+        "tags":["professional", "development", "growth", "networking", "Kim Abel", "Sarah Emory", "Adam Marks"],
+        "semester":"s17"
     },
 
     "carnival" : {
-        "code":"cmu-spring-carnival-comm",
+        "code":"carnival",
         "name":"CMU Spring Carnival Committee",
-        "image":"images/circle.png",
+        "image":"images/carnival.png",
         "team":["akshay-gotadia","bruce-lin","rumby-wilson"],
-        "tags":["carnival", "spring", "booth", "buggy", "committee", "Amalia Martinez", "Stephen Clark"]
+        "tags":["carnival", "spring", "booth", "buggy", "committee", "Amalia Martinez", "Stephen Clark"],
+        "semester":"s17"
     },
 
     "sanfranciscoDOSW" : {
-        "code":"sf-dep-on-status-of-women",
+        "code":"sanfranciscoDOSW",
         "name":"San Francisco Department on the Status of Women",
-        "image":"images/circle.png",
+        "image":"images/sfdosw.png",
         "team":["connor-hanley", "amber-hu", "helen-kim", "sina siddiqi"],
-        "tags":["sf", "dosw", "rights", "women", "workplace", "Herschell Larrick", "Carol Sacco"]
+        "tags":["sf", "dosw", "rights", "women", "workplace", "Herschell Larrick", "Carol Sacco"],
+        "semester":"s17"
     },
 
     "beaver" : {
-        "code":"beaver-county-humane-society",
+        "code":"beaver",
         "name":"Beaver County Humane Society",
-        "image":"images/circle.png",
+        "image":"images/beaver.png",
         "team":["daniel-graf", "pooja-penninti", "hanson-zeng"],
-        "tags":["humane", "society", "animals", "rights", "Donna Bucek", "Karen Dioguardi", "Shannon O'Neill", "Susan Salyards"]
+        "tags":["humane", "society", "animals", "rights", "Donna Bucek", "Karen Dioguardi", "Shannon O'Neill", "Susan Salyards"],
+        "semester":"s17"
     },
 
     "ymca" : {
-        "code":"ymca-of-greater-pittsburgh",
+        "code":"ymca",
         "name":"YMCA of Greater Pittsburgh",
-        "image":"images/circle.png",
+        "image":"images/ymca.png",
         "team":["jake-bittner", "eric-chow", "abdusamed-sherif"],
-        "tags":["youth", "development", "ymca", "care", "childcare", "Jennifer Boutchard", "Todd Brinkman", "Jim Needles", "Deborah Pricener"]
+        "tags":["youth", "development", "ymca", "care", "childcare", "Jennifer Boutchard", "Todd Brinkman", "Jim Needles", "Deborah Pricener"],
+        "semester":"s17"
     },
 
     "softwareengineering" : {
-        "code":"software-engineering-institute",
+        "code":"softwareengineering",
         "name":"Software Engineering Institute",
-        "image":"images/circle.png",
+        "image":"images/sei.png",
         "team":["asawari-kanitkar", "divya-mohan", "katie-williams"],
-        "tags":["software", "technology", "engineering", "coding", "prototyping", "Chase Midler", "Satya Venneti"]
+        "tags":["software", "technology", "engineering", "coding", "prototyping", "Chase Midler", "Satya Venneti"],
+        "semester":"s17"
     },
 
     "kodiak" : {
-        "code":"kodiak-island-borough",
+        "code":"kodiak",
         "name":"Kodiak Island Borough School District",
-        "image":"images/circle.png",
+        "image":"images/kodiak.png",
         "team":["sebastian-geuerro-cardenas", "chris-lewis", "sophie-zhao"],
-        "tags":["public", "school", "Alaska", "native", "rural", "Damon Hargraves", "Jethro Jones"]
+        "tags":["public", "school", "Alaska", "native", "rural", "Damon Hargraves", "Jethro Jones"],
+        "semester":"s17"
     },
 
     "phipps" : {
-        "code":"phipps-conservatory",
+        "code":"phipps",
         "name":"Phipps Conservatory",
-        "image":"images/circle.png",
+        "image":"images/phipps.png",
         "team":["natalya-buchwald", "korrawat-jianthanakanon", "ally-sorge", "johnny-wu"],
-        "tags":["carnival", "spring", "booth", "buggy", "committee", "Amalia Martinez", "Stephen Clark"]
+        "tags":["carnival", "spring", "booth", "buggy", "committee", "Amalia Martinez", "Stephen Clark"],
+        "semester":"s17"
     },
 
     "pennResource" : {
-        "code":"pennsylvania-resource-council",
+        "code":"pennResource",
         "name":"Pennsylvania Resource Council",
-        "image":"images/circle.png",
+        "image":"images/pennResource.png",
         "team":["sai-dhulipalla", "rebecca-kern", "ziren-zhou"],
-        "tags":["grassroots", "environmental", "nonprofit", "Omoye Aikhuele", "Michael Stephaniak", "Justin Stockdale"]
+        "tags":["grassroots", "environmental", "nonprofit", "Omoye Aikhuele", "Michael Stephaniak", "Justin Stockdale"],
+        "semester":"s17"
     },
 
     "athletics" : {
-        "code":"cmu-athletics",
+        "code":"athletics",
         "name":"CMU Athletics",
-        "image":"images/circle.png",
+        "image":"images/athletics.png",
         "team":["james-jameson", "hyun-hee-clara-kim", "andrew wang"],
-        "tags":["sports", "athletes", "athletics", "activities", "recreation", "leadership", "teamwork", "Christine Scalise"]
+        "tags":["sports", "athletes", "athletics", "activities", "recreation", "leadership", "teamwork", "Christine Scalise"],
+        "semester":"s17"
     },
 
     "bluesky ": {
-        "code":"blue-sky-fund",
+        "code":"bluesky",
         "name":"Blue Sky Fund",
-        "image":"images/circle.png",
+        "image":"images/bluesky.png",
         "team":["jason-chen", "jordan-stapinski", "fang-you"],
-        "tags":["nonprofit", "urban", "youth", "students", "learning", "skills", "Paula Labieniec"]
+        "tags":["nonprofit", "urban", "youth", "students", "learning", "skills", "Paula Labieniec"],
+        "semester":"s17"
     },
 
     "auberle" : {
         "code":"auberle",
         "name":"Auberle",
-        "image":"images/circle.png",
+        "image":"images/auberle.png",
         "team":["erin-dieringer", "matt-gruber", "rhoeun-song"],
-        "tags":["catholic", "family", "child", "service", "community", "service", "youth", "Suzi Rosati"]
+        "tags":["catholic", "family", "child", "service", "community", "service", "youth", "Suzi Rosati"],
+        "semester":"s17"
     }
-}, "spring16" :{"ymca2" : {
-    "code":"ymca",
+}, 
+"spring16" :{
+    "ymca2" : {
+    "code":"ymca2",
     "name":"YMCA",
-    "image":"images/circle.png",
+    "image":"images/ymca.png",
     "team":["renzo-bautista", "derek-hirata", "yeon-soo-kim"],
-    "tags":["youth", "development", "ymca", "care", "childcare", "nonprofit", "classes", "YMCA of Greater Pittsburgh"]
+    "tags":["youth", "development", "ymca", "care", "childcare", "nonprofit", "classes", "YMCA of Greater Pittsburgh"],
+    "semester":"s16"
 },
 
 "beverly" : {
-    "code":"beverlys-birthdays",
+    "code":"beverly",
     "name":"Beverly's Birthdays",
-    "image":"images/circle.png",
+    "image":"images/beverly.png",
     "team":["jeanine-huang", "gaury-nagaraju", "ibrahim-soltan"],
-    "tags":["birthday", "celebrations", "children", "families", "pittsburgh", "Megs Yunn", "Martina Caruso"]
+    "tags":["birthday", "celebrations", "children", "families", "pittsburgh", "Megs Yunn", "Martina Caruso"],
+    "semester":"s16"
 },
 
 "handprinter2" : {
     "code":"handprinter2",
     "name":"Handprinter",
-    "image":"images/circle.png",
+    "image":"images/handprinter.png",
     "team":["jennifer-jin", "chiamaka-nnebe", "mark-vella"],
-    "tags":["environmental", "monitor", "sustainable", "contributions", "Gregory Norris"]
+    "tags":["environmental", "monitor", "sustainable", "contributions", "Gregory Norris"],
+    "semester":"s16"
 },
 
 "foodprint" : {
-    "code":"environmental-foodprint",
+    "code":"foodprint",
     "name":"Environmental Foodprint",
-    "image":"images/circle.png",
+    "image":"images/placeholder.png",
     "team":["karen-ircine", "anne-lueh", "jackie-pan"],
-    "tags":["food", "consumption", "energy", "footprint", "emissions", "Michelle Tom", "Paul Fischbeck", "Chris Hendrickson"]
+    "tags":["food", "consumption", "energy", "footprint", "emissions", "Michelle Tom", "Paul Fischbeck", "Chris Hendrickson"],
+    "semester":"s16"
 },
 
 "buildingPerformace" : {
-    "code":"center-for-building-performance",
+    "code":"buildingPerformance",
     "name":"Center for Building Performance and Diagnostics",
-    "image":"images/circle.png",
+    "image":"images/cbpd.png",
     "team":["brad-chin", "karen-segal", "maggie-yu"],
-    "tags":["architecture", "cmu", "research", "development", "buildings", "Azizan Aziz", "Bertrand Lasternas"]
+    "tags":["architecture", "cmu", "research", "development", "buildings", "Azizan Aziz", "Bertrand Lasternas"],
+    "semester":"s16"
 },
 
 "beaverCounty" : {
-    "code":"beaver-county",
-    "name":"Beaver County Humane Society",
-    "image":"images/circle.png",
+    "code":"beaverCounty",
+    "name":"Beaver County",
+    "image":"images/beaver.png",
     "team":["gus-henry", "shijie-rao", "alex-wang"],
-    "tags":["humane", "society", "animals", "rights", "Donna Bucek", "Susan Salyards", "Jasmin Wu"]
+    "tags":["humane", "society", "animals", "rights", "Donna Bucek", "Susan Salyards", "Jasmin Wu"],
+    "semester":"s16"
 },
 
 "mitochondrial" : {
-    "code":"united-mitochondrial-disease-foundation",
+    "code":"mitochondrial",
     "name":"United Mitochondrial Disease Foundation",
-    "image":"images/circle.png",
+    "image":"images/mitochondrial.png",
     "team":["luke-hottinger", "lois-yang", "eric-yu"],
-    "tags":["nonprofit", "mitochondrial", "disease", "cure", "Chuck A. Mohan", "Jeff Gamza", "Cliff F. Gorski"]
+    "tags":["nonprofit", "mitochondrial", "disease", "cure", "Chuck A. Mohan", "Jeff Gamza", "Cliff F. Gorski"],
+    "semester":"s16"
 },
 
 "chuck" : {
     "code":"chuck",
     "name":"Best of the Batch Foundation: Project C.H.U.C.K.",
-    "image":"images/circle.png",
+    "image":"images/chuck.png",
     "team":["bejamin-junker", "shreeyagya-khemka", "sung-jin-kim"],
-    "tags":["nonprofit", "character", "self-esteem", "education", "family", "children", "Latasha Wilson-Batch"]
+    "tags":["nonprofit", "character", "self-esteem", "education", "family", "children", "Latasha Wilson-Batch"],
+    "semester":"s16"
 },
 
 "botanical" : {
-    "code":"phipps",
+    "code":"botanical",
     "name":"Phipps Conservatory and Botanical Gardens",
-    "image":"images/circle.png",
+    "image":"images/phipps2.png",
     "team":["jibby-ayo-ani", "suvrath-penmetcha", "alex-tsai"],
-    "tags":["garden", "environmental", "preservation", "sustainability", "Adam Haas", "Emily Kalnicky"]
+    "tags":["garden", "environmental", "preservation", "sustainability", "Adam Haas", "Emily Kalnicky"],
+    "semester":"s16"
 },
 
 "sei" : {
-    "code":"sei-rubric",
+    "code":"sei",
     "name":"SEI Rubric Creator",
-    "image":"images/circle.png",
+    "image":"images/seiRubric.png",
     "team":["westin-lohne", "arun-marsten", "donovan-powers", "aamer-rakla"],
-    "tags":["software", "engineering", "nonprofit", "cmu", "cybersecurity", "government", "Josh Hammerstein"]
+    "tags":["software", "engineering", "nonprofit", "cmu", "cybersecurity", "government", "Josh Hammerstein"],
+    "semester":"s16"
 },
 
 "bacon" : {
-    "code":"francis-bacon",
+    "code":"bacon",
     "name":"Six Degrees of Francis Bacon",
-    "image":"images/circle.png",
+    "image":"images/bacon.png",
     "team":["david-gao", "max-harlynking", "amy-li"],
-    "tags":["cmu", "research", "data", "visualization", "british", "relationships", "Christopher Warren", "Jessica Otis"]
+    "tags":["cmu", "research", "data", "visualization", "british", "relationships", "Christopher Warren", "Jessica Otis"],
+    "semester":"s16"
 },
 
 "pennResource" : {
-    "code":"pennsylvania-resource-council",
+    "code":"pennResource2",
     "name":"Pennsylvania Resource Council",
-    "image":"images/circle.png",
+    "image":"images/pennResource.png",
     "team":["sai-dhulipalla", "rebecca-kern", "ziren-zhou"],
-    "tags":["grassroots", "environmental", "nonprofit", "Omoye Aikhuele", "Michael Stephaniak", "Justin Stockdale"]
+    "tags":["grassroots", "environmental", "nonprofit", "Omoye Aikhuele", "Michael Stephaniak", "Justin Stockdale"],
+    "semester":"s16"
 },
 
 "cpds" : {
-    "code":"cmu-professional-development-competency-assessment",
+    "code":"cpds",
     "name":"CMU Professional Development Services: Competency Assessment",
-    "image":"images/circle.png",
+    "image":"images/placeholder.png",
     "team":["madeline-duque", "jennifer-han", "james-ormond"],
-    "tags":["cmu", "professional", "career", "development", "competency", "Kim Abel", "Adam Marks", "Katherine Sheridan"]
+    "tags":["cmu", "professional", "career", "development", "competency", "Kim Abel", "Adam Marks", "Katherine Sheridan"],
+    "semester":"s16"
 },
 
 "swiftceipt" : {
     "code":"swiftceipt",
     "name":"SwiftCeipt",
-    "image":"images/circle.png",
+    "image":"images/swiftceipt.png",
     "team":["sivan-mehta", "eric-terui", "amy-zheng"],
-    "tags":["oakland", "tech", "solution", "receipts", "finances", "Kevin Chau", "Jason Xu", "Jon Yen"]
+    "tags":["oakland", "tech", "solution", "receipts", "finances", "Kevin Chau", "Jason Xu", "Jon Yen"],
+    "semester":"s16"
 },
 
 "carnivalCommitee" : {
-    "code":"cmu-spring-carnival-comm-2016",
+    "code":"carnivalCommittee",
     "name":"CMU Spring Carnival Committee 2016",
-    "image":"images/circle.png",
+    "image":"images/carnivalCommittee.png",
     "team":["ronnie-ghose", "israel-madueme", "kunal-sinha"],
-    "tags":["cmu", "spring", "carnival", "booth", "buggy", "Patrick Koenig"]
+    "tags":["cmu", "spring", "carnival", "booth", "buggy", "Patrick Koenig"],
+    "semester":"s16"
 }
 
 }

@@ -13,16 +13,16 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
 
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/project.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/project.css">
 
-    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
 </head>
 <body>
 <div class="sidenav" id="menu-sidenav">
               <ul class="nav navbar-nav">
                 <li class="navbar-text nav-title-text" onclick="closeNav()" id="nav-cmu">Carnegie Mellon University</br>Information Systems</li>
-                <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                <li class="active"><a href="../index.html">Home <span class="sr-only">(current)</span></a></li>
                 <li><a href="#">All Projects</a></li>
               </ul>
               
@@ -30,23 +30,21 @@
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects by Semester <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Spring 17</a></li>
-                    <li><a href="#">Spring 16</a></li>
+                    <li><a href="../s17.html">Spring 17</a></li>
+                    <li><a href="../s16.html">Spring 16</a></li>
                   </ul>
                 </li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Students</a></li>
               </ul>
     </div><!-- /.navbar-collapse -->
 <div id="main">
     <!-- Headder -->
         <div class="header-main">
-            <a id="back-arrow" href="index.html" >
+            <a id="back-arrow" href="../s16.html" >
                         <span class="glyphicon glyphicon-chevron-left"></span>
             </a>
-            <form class=" header-search">
+            <form class=" header-search" action="../search.html" onsubmit="return validateForm()" name="searchbar">
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Search">
+                  <input type="text" class="form-control" placeholder="Search" name="search">
                 </div>
             </form>
 
@@ -59,8 +57,8 @@
         </div>
     <!-- End Header-->
     <div class="text-things">
-    <h2 class="project-name">Student Projects</h2>
-    <img class="photo" src="images/placeholder.png">
+    <h2 class="project-name"> Six Degrees of Francis Bacon </h2>
+    <img class="photo" src="../images/bacon.png">
     <div id="sections">
         <details>
             <summary>Team</summary>

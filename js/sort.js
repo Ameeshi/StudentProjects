@@ -32,6 +32,7 @@ function LoadSemesterPage(sem) {
  		// console.log(card);
 
  		card.childNodes[0].childNodes[0].src = projects[proj].img;
+ 		card.childNodes[0].childNodes[0].className = "img-circle";
  		card.childNodes[0].childNodes[1].innerHTML = projects[proj].name;
  		card.childNodes[0].href = sem.code + "/" + projects[proj].code + ".html"
  		index++;
@@ -67,6 +68,7 @@ function LoadAllProjectsPage(){
  		//console.log(card);
 
  		card.childNodes[0].childNodes[0].src = displayedProjects[i].img;
+ 		card.childNodes[0].childNodes[0].className = "img-circle";
  		card.childNodes[0].childNodes[1].innerHTML = displayedProjects[i].name;
  		card.childNodes[0].href = sem.code + "/" + displayedProjects[i].code + ".html"
  	}
@@ -120,6 +122,7 @@ function LoadSearchPage() {
  		console.log(card);
 
  		card.childNodes[0].childNodes[0].src = displayedProjects[i].img;
+ 		card.childNodes[0].childNodes[0].className = "img-circle";
  		card.childNodes[0].childNodes[1].innerHTML = displayedProjects[i].name;
  		card.childNodes[0].href = displayedProjects[i].semester + "/" + displayedProjects[i].code + ".html"
  	}
