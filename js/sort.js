@@ -93,7 +93,7 @@ function LoadSearchPage() {
  			for (var j = 0; j < temp[name].tags.length; j++) { // itterating through all of the tags
  				for (var i = 0; i < terms.length; i++) {   // itterating through tag list
  					var test = terms[i];
- 					if (temp[name].tags[j].search(new RegExp(test)) != -1) {  // Case insensitive search of partial tags
+ 					if (temp[name].tags[j].search(new RegExp(test, 'i')) != -1) {  // Case insensitive search of partial tags
  						valid = true;
  					}
  				} 
@@ -211,7 +211,7 @@ function SortAlphabetical() {
 
  		card.childNodes[0].childNodes[0].src = displayedProjects[i].img;
  		card.childNodes[0].childNodes[1].innerHTML = displayedProjects[i].name;
- 		card.childNodes[0].href = displayedProjects[i].semester + "/" + displayedProjects[i].code + ".html"
+ 		card.childNodes[0].href = displayedProjects[i].sem + "/" + displayedProjects[i].code + ".html"
  	}
 
  	console.log(displayedProjects);

@@ -6,8 +6,9 @@ function loadProject() {
 	console.log(bits);
 	console.log(code);
 
-	var proj = projectlist[bits[bits.length-2].replace("s", "spring").replace("f", "fall")][code];
-
+	var s = bits[bits.length-2].replace("s", "spring").replace("f", "fall");
+	var proj = projectlist[s][code];
+	console.log(s);
 	console.log(proj);
 
 	var target = document.getElementsByClassName("project-name")[0];
@@ -36,7 +37,9 @@ function loadProject() {
  		var pic = document.createElement("img");
  		pic.className = "img-circle";
  		pic.src = person["image"];
- 		console.log(pic.src);	
+ 		if(person["image"] === "../images/circle.png") {
+ 			pic.src = pic.src.replace("circle", "circle"+((member + 1)%3));
+ 		}
  		panel.href = "../people/" + person["code"] + ".html";
  		panel.appendChild(pic);
 

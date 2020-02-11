@@ -27,12 +27,19 @@ summary {
 }
 
 .project-team {
-/*	border: 1px dotted black;
-*/}
+	padding-left: 0px;
+}
 
 .person {
 	display: inline-block;
-	float: none;
+	float: left;
 	margin: auto;
+	padding-top: 0px;
+	margin-top: 0px;
 /*	border: 1px dotted black;
 */}
+
+.person p {
+	font-size: 0.7em;
+	text-align: center;
+}

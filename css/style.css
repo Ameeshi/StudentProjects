@@ -88,14 +88,14 @@ h1 {
 
 .header-main {
 	background-color: #4a76d5;
-	height: 65px;
+	height: 75px;
 	/*position: fixed;*/
 	width: 100%;
 	z-index: 1;
 }
 
 .header-search {
-	padding: 15px 15px 0px;
+	padding: 22px 15px 0px;
 	width: 83%;
 }
 

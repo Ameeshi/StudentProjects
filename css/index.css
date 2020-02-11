@@ -10,9 +10,15 @@
 }
 */
 .header-search {
-	padding: 15px 15px 0px;
 	width: 90%;
 	float: left;
+}
+
+p {
+	padding: 0px 30px;
+	text-align: justify;
+    text-justify: inter-word;
+    font-size: 1.1em;
 }
 
 .carousel-inner .active.left { left: -33%; }
@@ -34,15 +40,19 @@
     min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
 }
 .carousel .item img{
+	border: 2px solid lightgrey;
+	border-radius: 10%;
     margin: 0 auto; /* Align slide image horizontally center */
 }
+
 .bs-example{
     margin: 20px;
+    margin-bottom: 15px;
 }
 .carousel-inner {
     box-shadow: 0px 0px 20px lightgrey;
     border-radius: 5%;
-    border: 2px solid lightgrey;
+    border: 2px solid grey;
 }
 .carousel-control.left {
     background-image: none;
@@ -66,8 +76,10 @@
 }
 
 .carousel .item img[alt~="team"] {
-    width: 20%;
-    height: 20%;
+	border: none;
+	border-radius: 50%;
+    width: 70px;
+    height: 70px;
     margin: 10px 0pc;
 }
 .carousel-control {
@@ -107,11 +119,12 @@
 	font-family:'Lato';
 	position: relative;
 	border: solid black 1px;
-	padding: 10px 10%;
+	padding: 10px 9%;
 	margin: 10px;
 	display: inline-block;
 	border-radius: 35px;
 	font-size: 1.5em;
 	color: white;
 	background-color: #4a76d5;
+	margin-bottom: 15px;
 }

@@ -11,6 +11,10 @@ function loadPerson() {
 	var target = document.getElementById("mainpicture");
 	console.log(target);
 	target.src = person["image"];
+	if(person["image"] === "../images/circle.png") {
+		console.log("testo");
+ 		target.src = target.src.replace("circle", "circle0");
+ 	}
 
 	target = document.getElementById("name");
 	target.innerHTML = person["name"];
@@ -31,6 +35,9 @@ function loadPerson() {
  		var pic = document.createElement("img");
  		pic.className = "img-circle";
  		pic.src = peoplelist[person["team-codes"][member]]["image"];
+ 		if(peoplelist[person["team-codes"][member]]["image"] === "../images/circle.png") {
+ 			pic.src = pic.src.replace("circle", "circle"+((member + 1)%3));
+ 		}
  		console.log(pic.src);	
  		panel.href = peoplelist[person["team-codes"][member]]["code"] + ".html";
  		panel.appendChild(pic);

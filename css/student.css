@@ -1,5 +1,5 @@
 h3 {
-	margin-top: 0px;
+	margin-top: 10px;
 	font-weight: bold;
 }
 
@@ -29,6 +29,10 @@ p {
 	float: none;
 	margin: auto;
 	display: inline-block;
+}
+
+img {
+	border: 2px solid lightgrey;
 }
 
 

@@ -32,7 +32,7 @@ projectlist =
     "cmupds" : {
         "code":"cmupds",
         "name":"CMU Professional Development Services",
-        "image":"images/placeholder.png",
+        "image":"images/cpdc.png",
         "team":["travis-chambers","richrd-huang","piyush-puri"],
         "tags":["professional", "development", "growth", "networking", "Kim Abel", "Sarah Emory", "Adam Marks"],
         "semester":"s17"
@@ -51,7 +51,7 @@ projectlist =
         "code":"sanfranciscoDOSW",
         "name":"San Francisco Department on the Status of Women",
         "image":"images/sfdosw.png",
-        "team":["connor-hanley", "amber-hu", "helen-kim", "sina siddiqi"],
+        "team":["connor-hanley", "amber-hu", "helen-kim", "sina-siddiqi"],
         "tags":["sf", "dosw", "rights", "women", "workplace", "Herschell Larrick", "Carol Sacco"],
         "semester":"s17"
     },
@@ -119,7 +119,7 @@ projectlist =
         "semester":"s17"
     },
 
-    "bluesky ": {
+    "bluesky": {
         "code":"bluesky",
         "name":"Blue Sky Fund",
         "image":"images/bluesky.png",
@@ -168,13 +168,13 @@ projectlist =
 "foodprint" : {
     "code":"foodprint",
     "name":"Environmental Foodprint",
-    "image":"images/placeholder.png",
+    "image":"images/foodprint.png",
     "team":["karen-ircine", "anne-lueh", "jackie-pan"],
     "tags":["food", "consumption", "energy", "footprint", "emissions", "Michelle Tom", "Paul Fischbeck", "Chris Hendrickson"],
     "semester":"s16"
 },
 
-"buildingPerformace" : {
+"buildingPerformance" : {
     "code":"buildingPerformance",
     "name":"Center for Building Performance and Diagnostics",
     "image":"images/cbpd.png",
@@ -249,7 +249,7 @@ projectlist =
 "cpds" : {
     "code":"cpds",
     "name":"CMU Professional Development Services: Competency Assessment",
-    "image":"images/placeholder.png",
+    "image":"images/cpdc.png",
     "team":["madeline-duque", "jennifer-han", "james-ormond"],
     "tags":["cmu", "professional", "career", "development", "competency", "Kim Abel", "Adam Marks", "Katherine Sheridan"],
     "semester":"s16"
@@ -264,7 +264,7 @@ projectlist =
     "semester":"s16"
 },
 
-"carnivalCommitee" : {
+"carnivalCommittee" : {
     "code":"carnivalCommittee",
     "name":"CMU Spring Carnival Committee 2016",
     "image":"images/carnivalCommittee.png",
